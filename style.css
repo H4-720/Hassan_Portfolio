@@ -101,3 +101,22 @@ nav ul li a:hover::after{
 .tab-link.active::after{
     width: 70%;
 }
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.toolimg{
+    background-color: #5c5859a2;
+    width: 100%;
+    height: 50vh;
+}
+.contact{
+    width: 100%;
+    height: 70vh;
+}
