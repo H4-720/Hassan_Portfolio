@@ -121,6 +121,7 @@ nav ul li a:hover::after{
 }
 .technical-skills h3{
     color: #ff004f;
+    margin-top: 10px;
 }
 .experience p{
     margin-top: 10px;
@@ -131,7 +132,27 @@ nav ul li a:hover::after{
 .tab-contents p{
     margin-top: 10px;
 }
+/* ----------------images----------------- */
+.images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.images img {
+    border-radius: 50%; 
+    width: 150px;
+    height: 150px; 
+    object-fit: cover;
+    border: 5px solid #ff004f; 
+    padding: 5px;
+}
+
 /* --------------contact----------------- */
+#contact{
+    margin-top: 30px;
+}
 .row{
     display: flex;
     justify-content: space-between;
@@ -203,6 +224,15 @@ form input , form textarea{
     background: #262626;
     font-weight: 250;
     margin-top: 20px;
+}
+.success-message{
+    color:rgba(1, 8, 6, 0.605);
+    background-color: rgb(208, 255, 239);
+    display: none;
+    padding: 10px 0;
+    border-radius: 2%;
+    text-align: center;
+    font-weight: bold;
 }
 /* ---------------small screen------------------- */
 nav .fas{
