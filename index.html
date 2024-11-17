@@ -12,12 +12,14 @@
         <div class="container">
             <nav>           
                 <img src="image/LogoOfHassan.png"  class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Java Developer</p>
@@ -48,11 +50,14 @@
                     <p>01/2024 - Present</p>
                     <p><span class="redspan"><b>Responsiblities</b></span></p>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
+                        <li>Led the design and development of APIs within a microservices architecture for critical services in the Unilever 
+                            S&D project.</li>
+                        <li>Enhanced API performance and reduced latency by 20% by optimizing SQL queries and implementing circuit 
+                            breaker patterns to prevent unnecessary calls, improving system security by 30%.</li>
+                        <li>Developed and fine-tuned 5 APIs for seamless data transfer between Excel and the database, achieving a 60% 
+                            reduction in latency.</li>
+                        <li>Diagnosed and resolved over 60+ bugs through advanced debugging techniques, ensuring smoother 
+                            application functionality.</li>
                     </ul>
                 </div>
                 <div class="experience">
@@ -60,11 +65,12 @@
                     <p>06/2023 - 01/2024</p>
                     <p><span class="redspan"><b>Responsiblities</b></span></p>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quia?</li>
+                        <li>Developed and optimized APIs for the Befiler application, including critical components such as pricing and 
+                            tax calculators.</li>
+                        <li>Managed and enhanced over 30 key APIs for the Thardeep loan application, reducing latency by 30% through 
+                            API and SQL query optimization.</li>
+                        <li>Identified and resolved 30+ bugs using advanced debugging techniques, improving overall application stability 
+                            and performance. </li>
                     </ul>   
                 </div>
             </div>
@@ -111,9 +117,13 @@
             <div class="tab-contents" id="eduction">
                 <h3>Iqra University</h3>
                 <p>08/2019 - 06/2023</p>
-    
-                <h3>CBM college</h3>
+                <p><b><span class="redspan">BS(Computer Science)</span></b></p>
+                <h3 style="margin-top: 30px;">CBM college</h3>
                 <p>06/2023 - 01/2024</p>
+                <p><b><span class="redspan">Pre-engineering</span></b></p>
+                <h3 style="margin-top: 30px;">St Patrick High School</h3>
+                <p>06/2023 - 01/2024</p>
+                <p><b><span class="redspan">Computer Science</span></b></p>
             </div>
         </div>
     </div>
@@ -167,6 +177,15 @@
             }
             event.currentTarget.classList.add("active");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+        function closemenu(){
+            sidemenu.style.right = '-200px';
         }
     </script>
 </body>

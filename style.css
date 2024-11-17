@@ -105,8 +105,8 @@ nav ul li a:hover::after{
     width: 70%;
 }
 .tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
+
+    margin: 10px 10px 0 15px;
 }
 .tab-contents{
     display: none;
@@ -123,6 +123,12 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 .experience p{
+    margin-top: 10px;
+}
+.technical-skills li{
+    font-weight: bold;
+}
+.tab-contents p{
     margin-top: 10px;
 }
 /* --------------contact----------------- */
@@ -195,4 +201,67 @@ form input , form textarea{
     background: #262626;
     font-weight: 250;
     margin-top: 20px;
+}
+/* ---------------small screen------------------- */
+nav .fas{
+    display: none;
+}
+/* ----------css fir small screens------------ */
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(image/VZWyBm-removebg-preview_LE_auto_x4.jpg);
+        background-size: cover;
+        background-position: inherit;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    #Skills .tab-titles{
+        width: 100%;
+        display: flex;
+    }
+    #Skills .tab-titles h2{
+        font-size: 15px;
+        display: inline-block;
+    }
+    .technical-skills{
+        display: block;
+    }
+    .row{
+        display: block;
+    }
+    .contact-left{
+        flex-basis: 35%;
+    }
+    .contact-right{
+        flex-basis: 60%;
+    }
 }
